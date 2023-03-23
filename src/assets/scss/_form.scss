@@ -1,0 +1,101 @@
+$border-default-clr: #D5DCE3;
+$border-focus-clr: #2774E6;
+$border-error-clr: var(--red-clr);
+$placeholder-clr: #8691A2;
+
+$field-height: 40px;
+$text-size: 14px;
+$space-between-elements: 8px;
+
+$btn-clr: #2774E6;
+$btn-hover-clr: #3980EA;
+$btn-focus-clr: #1B69DC;
+$btn-disabled-clr: #A3BFE8;
+$btn-height: 48px;
+$btn-text-size: 16px;
+
+.input_group {
+    margin-bottom: 24px;
+
+    &.m-last {
+        margin-bottom: 0;
+    }
+
+    // Input label
+    &-label {
+        display: block;
+        color: var(--text-main-clr);
+        font-size: $text-size;
+        font-weight: bold;
+        margin-bottom: $space-between-elements;
+    }
+
+    // Input field
+    &-field {
+        border: 1px solid $border-default-clr;
+        border-radius: 4px;
+        color: var(--text-main-clr);
+        font-size: $text-size;
+        display: block;
+        line-height: $field-height;
+        padding: 0 16px;
+        margin-bottom: $space-between-elements;
+        width: 100%;
+
+        &::placeholder { 
+            color: $placeholder-clr;
+            opacity: 1;
+        }
+
+        &.m-error {
+            color: var(--red-clr);
+            border-color: $border-error-clr;
+        }
+
+        &:focus {
+            border-color: $border-focus-clr;
+            color: var(--text-main-clr);
+            outline: none;
+        }
+    }
+
+    // Error text
+    &-error {
+        align-items: center;
+        color: var(--red-clr);
+        display: flex;
+        justify-content: flex-start;
+        font-size: $text-size;
+    }
+
+    &-error_icon {
+        margin-right: 9px;
+    }
+
+    // Input button (submit)
+    &-button {
+        background-color: $btn-clr;
+        border: none;
+        border-radius: 4px;
+        color: var(--white-clr);
+        cursor: pointer;
+        display: block;
+        font-size: $btn-text-size;
+        line-height: $btn-height;
+        text-align: center;
+        width: 100%;
+
+        &:hover {
+            background-color: $btn-hover-clr;
+        }
+
+        &:focus {
+            background-color: $btn-focus-clr;
+        }
+
+        &:disabled {
+            background-color: $btn-disabled-clr;
+            cursor: default;
+        }
+    }
+}

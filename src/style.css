@@ -1,0 +1,27 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --background-clr: #F5F7FA;
+  --text-main-clr: #373747;
+  --text-second-clr: #5C6269;
+  --red-clr: #DB4732;
+  --white-clr: #FFFFFF;
+  --black-clr: #000000;
+
+}
+
+body {
+  background-image: url('assets/images/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-clr);
+  margin: 0;
+  padding: 0;
+  
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}

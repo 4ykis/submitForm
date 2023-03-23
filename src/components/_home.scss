@@ -1,0 +1,40 @@
+@import '../assets/scss/form';
+
+$title-size: 32px;
+$title-space-bottom: 32px;
+$subtitle-size: 16px;
+$subtitle-space-bottom: 24px;
+$modal-width: 400px;
+$modal-space-x: 24px;
+$modal-space-y: 32px;
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.modal {
+    background-color: var(--white-clr);
+    padding: $modal-space-y $modal-space-x;
+    border-radius: 12px;
+    width: 100%;
+    max-width: $modal-width;
+
+    &-title {
+        text-align: center;
+        margin: 0 0 $title-space-bottom;
+        font-size: $title-size;
+        font-weight: bold;
+        color: var(--text-main-clr)
+    }
+
+    &-subtitle {
+        text-align: center;
+        margin: 0 0 $subtitle-space-bottom;
+        font-size: $subtitle-size;
+        color: var(--text-second-clr)
+    }
+}
